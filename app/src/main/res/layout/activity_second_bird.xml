@@ -18,29 +18,35 @@
         android:id="@+id/btnNext2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/forward"
-        tools:layout_editor_absoluteX="345dp"
-        tools:layout_editor_absoluteY="544dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.751"
+        app:srcCompat="@drawable/forward" />
 
     <ImageView
-        android:id="@+id/btnNext2"
+        android:id="@+id/imageView6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bird_one" />
+
+    <ImageView
+        android:id="@+id/btnprev2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/forward"
-        tools:layout_editor_absoluteX="345dp"
-        tools:layout_editor_absoluteY="544dp" />
-
-    <ImageView
-        android:id="@+id/btnBack"
-        android:layout_width="46dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.798"
+        app:layout_constraintVertical_bias="0.751"
         app:srcCompat="@drawable/backck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

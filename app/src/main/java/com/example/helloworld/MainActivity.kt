@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.helloworld.databinding.ActivityMainBinding
+import com.squareup.picasso.Picasso
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
@@ -19,9 +20,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this,SecondBirdActivity::class.java)
             startActivity(intent)
         }
-        picasso
-        get().load("https://github.com/Esther-Naserian/Mentor-Connect.git")
-            .into(binding.imageView)
+        Picasso
+            .get()
+            .load("https://i.pinimg.com/474x/da/cb/f7/dacbf7ba8c8eb6cbc6a0b8d9c5b95081.jpg")
+            .into(binding.imageView8)
 
     }
 }
